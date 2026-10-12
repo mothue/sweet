@@ -1,0 +1,20 @@
+# Cargo manifest
+# https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[package]
+name = "sweet"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+reqwest = { version = "0.13", features = ["stream", "json"] }
+indicatif = "0.18"
+futures-util = "0.3"
+clap = { version = "4", features = ["derive"] }
+bytes = "1"
+owo-colors = "4"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+miette = { version = "7", features = ["fancy"] }
+thiserror = "2"
